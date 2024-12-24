@@ -1,0 +1,1152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.AppConfigData</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.AppConfigData.AmazonAppConfigDataConfig">
+            <summary>
+            Configuration for accessing Amazon AppConfigData service
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.AmazonAppConfigDataConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.AmazonAppConfigDataConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.AmazonAppConfigDataConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.AppConfigData.AmazonAppConfigDataException">
+            <summary>
+             Common exception for the AppConfigData service.
+             </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonAppConfigDataException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonAppConfigDataException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonAppConfigDataException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonAppConfigDataException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonAppConfigDataException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.AppConfigData.Internal.AmazonAppConfigDataMetadata">
+            <summary>
+            Service metadata for  Amazon AppConfigData service
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Internal.AmazonAppConfigDataMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Internal.AmazonAppConfigDataMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.AppConfigData.AmazonAppConfigDataRequest">
+            <summary>
+            Base class for AppConfigData operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.BadRequestDetails">
+            <summary>
+            Details describing why the request was invalid
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.BadRequestDetails.InvalidParameters">
+            <summary>
+            Gets and sets the property InvalidParameters. 
+            <para>
+            Present if the Reason for the bad request was 'InvalidParameters'
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.BadRequestException">
+            <summary>
+            The input fails to satisfy the constraints specified by the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.BadRequestException.#ctor(System.String)">
+            <summary>
+            Constructs a new BadRequestException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.BadRequestException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.BadRequestException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.BadRequestException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.BadRequestException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.BadRequestException.Details">
+            <summary>
+            Gets and sets the property Details. 
+            <para>
+            Details describing why the request was invalid
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.BadRequestException.Reason">
+            <summary>
+            Gets and sets the property Reason. 
+            <para>
+            Code indicating the reason the request was invalid.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.GetLatestConfigurationRequest">
+            <summary>
+            Container for the parameters to the GetLatestConfiguration operation.
+            Retrieves the latest deployed configuration. This API may return empty Configuration
+            data if the client already has the latest version. See StartConfigurationSession to
+            obtain an InitialConfigurationToken to call this API.
+            
+             <important> 
+            <para>
+            Each call to GetLatestConfiguration returns a new ConfigurationToken (NextPollConfigurationToken
+            in the response). This new token MUST be provided to the next call to GetLatestConfiguration
+            when polling for configuration updates.
+            </para>
+             
+            <para>
+            To avoid excess charges, we recommend that you include the <code>ClientConfigurationVersion</code>
+            value with every call to <code>GetConfiguration</code>. This value must be saved on
+            your client. Subsequent calls to <code>GetConfiguration</code> must pass this value
+            by using the <code>ClientConfigurationVersion</code> parameter. 
+            </para>
+             </important>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.GetLatestConfigurationRequest.ConfigurationToken">
+            <summary>
+            Gets and sets the property ConfigurationToken. 
+            <para>
+            Token describing the current state of the configuration session. To obtain a token,
+            first call the StartConfigurationSession API. Note that every call to GetLatestConfiguration
+            will return a new ConfigurationToken (NextPollConfigurationToken in the response)
+            and MUST be provided to subsequent GetLatestConfiguration API calls.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.GetLatestConfigurationResponse">
+            <summary>
+            Response parameters for the GetLatestConfiguration API
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.GetLatestConfigurationResponse.Configuration">
+            <summary>
+            Gets and sets the property Configuration. 
+            <para>
+            The data of the configuration. Note that this may be empty if the client already has
+            the latest version of configuration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.GetLatestConfigurationResponse.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            A standard MIME type describing the format of the configuration content.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.GetLatestConfigurationResponse.NextPollConfigurationToken">
+            <summary>
+            Gets and sets the property NextPollConfigurationToken. 
+            <para>
+            The latest token describing the current state of the configuration session. This MUST
+            be provided to the next call to GetLatestConfiguration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.GetLatestConfigurationResponse.NextPollIntervalInSeconds">
+            <summary>
+            Gets and sets the property NextPollIntervalInSeconds. 
+            <para>
+            The amount of time the client should wait before polling for configuration updates
+            again. See RequiredMinimumPollIntervalInSeconds to set the desired poll interval.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.InternalServerException">
+            <summary>
+            There was an internal failure in the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.InternalServerException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServerException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.InternalServerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.InternalServerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.InternalServerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.InternalServerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.Internal.MarshallTransformations.BadRequestDetailsUnmarshaller">
+            <summary>
+            Response Unmarshaller for BadRequestDetails Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.BadRequestDetailsUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#AppConfigData#Model#BadRequestDetails,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.BadRequestDetailsUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.Internal.MarshallTransformations.BadRequestDetailsUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for BadRequestException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.Internal.MarshallTransformations.GetLatestConfigurationRequestMarshaller">
+            <summary>
+            GetLatestConfiguration Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.GetLatestConfigurationRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.GetLatestConfigurationRequestMarshaller.Marshall(Amazon.AppConfigData.Model.GetLatestConfigurationRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.Internal.MarshallTransformations.GetLatestConfigurationRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.Internal.MarshallTransformations.GetLatestConfigurationResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetLatestConfiguration operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.GetLatestConfigurationResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.GetLatestConfigurationResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.Internal.MarshallTransformations.GetLatestConfigurationResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServerException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.Internal.MarshallTransformations.InvalidParameterDetailUnmarshaller">
+            <summary>
+            Response Unmarshaller for InvalidParameterDetail Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.InvalidParameterDetailUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#AppConfigData#Model#InvalidParameterDetail,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.InvalidParameterDetailUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.Internal.MarshallTransformations.InvalidParameterDetailUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.Internal.MarshallTransformations.StartConfigurationSessionRequestMarshaller">
+            <summary>
+            StartConfigurationSession Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.StartConfigurationSessionRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.StartConfigurationSessionRequestMarshaller.Marshall(Amazon.AppConfigData.Model.StartConfigurationSessionRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.Internal.MarshallTransformations.StartConfigurationSessionRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.Internal.MarshallTransformations.StartConfigurationSessionResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for StartConfigurationSession operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.StartConfigurationSessionResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.StartConfigurationSessionResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.Internal.MarshallTransformations.StartConfigurationSessionResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ThrottlingException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.InvalidParameterDetail">
+            <summary>
+            Contains details about an invalid parameter.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.InvalidParameterDetail.Problem">
+            <summary>
+            Gets and sets the property Problem. 
+            <para>
+            Detail describing why an individual parameter did not satisfy the constraints specified
+            by the service
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.ResourceNotFoundException">
+            <summary>
+            The requested resource could not be found.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.ResourceNotFoundException.ReferencedBy">
+            <summary>
+            Gets and sets the property ReferencedBy. 
+            <para>
+            A map indicating which parameters in the request reference the resource that was not
+            found.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.ResourceNotFoundException.ResourceType">
+            <summary>
+            Gets and sets the property ResourceType. 
+            <para>
+            The type of resource that was not found.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.StartConfigurationSessionRequest">
+            <summary>
+            Container for the parameters to the StartConfigurationSession operation.
+            Starts a configuration session used to retrieve a deployed configuration. See the
+            GetLatestConfiguration API for more details.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.StartConfigurationSessionRequest.ApplicationIdentifier">
+            <summary>
+            Gets and sets the property ApplicationIdentifier. 
+            <para>
+            The application ID or the application name.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.StartConfigurationSessionRequest.ConfigurationProfileIdentifier">
+            <summary>
+            Gets and sets the property ConfigurationProfileIdentifier. 
+            <para>
+            The configuration profile ID or the configuration profile name.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.StartConfigurationSessionRequest.EnvironmentIdentifier">
+            <summary>
+            Gets and sets the property EnvironmentIdentifier. 
+            <para>
+            The environment ID or the environment name.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.StartConfigurationSessionRequest.RequiredMinimumPollIntervalInSeconds">
+            <summary>
+            Gets and sets the property RequiredMinimumPollIntervalInSeconds. 
+            <para>
+            The interval at which your client will poll for configuration. If provided, the service
+            will throw a BadRequestException if the client polls before the specified poll interval.
+            By default, client poll intervals are not enforced.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.StartConfigurationSessionResponse">
+            <summary>
+            Response parameters for the StartConfigurationSession API.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.Model.StartConfigurationSessionResponse.InitialConfigurationToken">
+            <summary>
+            Gets and sets the property InitialConfigurationToken. 
+            <para>
+            Token encapsulating state about the configuration session. Provide this token to the
+            GetLatestConfiguration API to retrieve configuration data.
+            </para>
+             <important> 
+            <para>
+            This token should only be used once in your first call to GetLatestConfiguration.
+            You MUST use the new token in the GetConfiguration response (NextPollConfigurationToken)
+            in each subsequent call to GetLatestConfiguration.
+            </para>
+             </important>
+            </summary>
+        </member>
+        <member name="T:Amazon.AppConfigData.Model.ThrottlingException">
+            <summary>
+            The request was denied due to request throttling.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AppConfigData.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.AppConfigData.BadRequestReason">
+            <summary>
+            Constants used for properties of type BadRequestReason.
+            </summary>
+        </member>
+        <member name="F:Amazon.AppConfigData.BadRequestReason.InvalidParameters">
+            <summary>
+            Constant InvalidParameters for BadRequestReason
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.BadRequestReason.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.BadRequestReason.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.BadRequestReason.op_Implicit(System.String)~Amazon.AppConfigData.BadRequestReason">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.AppConfigData.InvalidParameterProblem">
+            <summary>
+            Constants used for properties of type InvalidParameterProblem.
+            </summary>
+        </member>
+        <member name="F:Amazon.AppConfigData.InvalidParameterProblem.Corrupted">
+            <summary>
+            Constant Corrupted for InvalidParameterProblem
+            </summary>
+        </member>
+        <member name="F:Amazon.AppConfigData.InvalidParameterProblem.Expired">
+            <summary>
+            Constant Expired for InvalidParameterProblem
+            </summary>
+        </member>
+        <member name="F:Amazon.AppConfigData.InvalidParameterProblem.PollIntervalNotSatisfied">
+            <summary>
+            Constant PollIntervalNotSatisfied for InvalidParameterProblem
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.InvalidParameterProblem.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.InvalidParameterProblem.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.InvalidParameterProblem.op_Implicit(System.String)~Amazon.AppConfigData.InvalidParameterProblem">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.AppConfigData.ResourceType">
+            <summary>
+            Constants used for properties of type ResourceType.
+            </summary>
+        </member>
+        <member name="F:Amazon.AppConfigData.ResourceType.Application">
+            <summary>
+            Constant Application for ResourceType
+            </summary>
+        </member>
+        <member name="F:Amazon.AppConfigData.ResourceType.Configuration">
+            <summary>
+            Constant Configuration for ResourceType
+            </summary>
+        </member>
+        <member name="F:Amazon.AppConfigData.ResourceType.ConfigurationProfile">
+            <summary>
+            Constant ConfigurationProfile for ResourceType
+            </summary>
+        </member>
+        <member name="F:Amazon.AppConfigData.ResourceType.Deployment">
+            <summary>
+            Constant Deployment for ResourceType
+            </summary>
+        </member>
+        <member name="F:Amazon.AppConfigData.ResourceType.Environment">
+            <summary>
+            Constant Environment for ResourceType
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.ResourceType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.ResourceType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.AppConfigData.ResourceType.op_Implicit(System.String)~Amazon.AppConfigData.ResourceType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.AppConfigData.AmazonAppConfigDataClient">
+             <summary>
+             Implementation for accessing AppConfigData
+            
+             Use the AppConfigData API, a capability of AWS AppConfig, to retrieve deployed configuration.
+             </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor">
+             <summary>
+             Constructs AmazonAppConfigDataClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonAppConfigDataClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor(Amazon.AppConfigData.AmazonAppConfigDataConfig)">
+             <summary>
+             Constructs AmazonAppConfigDataClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonAppConfigDataClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonAppConfigDataClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonAppConfigDataClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.AppConfigData.AmazonAppConfigDataConfig)">
+            <summary>
+            Constructs AmazonAppConfigDataClient with AWS Credentials and an
+            AmazonAppConfigDataClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonAppConfigDataClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonAppConfigDataClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonAppConfigDataClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor(System.String,System.String,Amazon.AppConfigData.AmazonAppConfigDataConfig)">
+            <summary>
+            Constructs AmazonAppConfigDataClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonAppConfigDataClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonAppConfigDataClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonAppConfigDataClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonAppConfigDataClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.#ctor(System.String,System.String,System.String,Amazon.AppConfigData.AmazonAppConfigDataConfig)">
+            <summary>
+            Constructs AmazonAppConfigDataClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonAppConfigDataClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonAppConfigDataClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.AppConfigData.AmazonAppConfigDataClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.GetLatestConfigurationAsync(Amazon.AppConfigData.Model.GetLatestConfigurationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the latest deployed configuration. This API may return empty Configuration
+            data if the client already has the latest version. See StartConfigurationSession to
+            obtain an InitialConfigurationToken to call this API.
+            
+             <important> 
+            <para>
+            Each call to GetLatestConfiguration returns a new ConfigurationToken (NextPollConfigurationToken
+            in the response). This new token MUST be provided to the next call to GetLatestConfiguration
+            when polling for configuration updates.
+            </para>
+             
+            <para>
+            To avoid excess charges, we recommend that you include the <code>ClientConfigurationVersion</code>
+            value with every call to <code>GetConfiguration</code>. This value must be saved on
+            your client. Subsequent calls to <code>GetConfiguration</code> must pass this value
+            by using the <code>ClientConfigurationVersion</code> parameter. 
+            </para>
+             </important>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetLatestConfiguration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetLatestConfiguration service method, as returned by AppConfigData.</returns>
+            <exception cref="T:Amazon.AppConfigData.Model.BadRequestException">
+            The input fails to satisfy the constraints specified by the service.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.InternalServerException">
+            There was an internal failure in the service.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.ResourceNotFoundException">
+            The requested resource could not be found.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appconfigdata-2021-11-11/GetLatestConfiguration">REST API Reference for GetLatestConfiguration Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppConfigData.AmazonAppConfigDataClient.StartConfigurationSessionAsync(Amazon.AppConfigData.Model.StartConfigurationSessionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Starts a configuration session used to retrieve a deployed configuration. See the
+            GetLatestConfiguration API for more details.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartConfigurationSession service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the StartConfigurationSession service method, as returned by AppConfigData.</returns>
+            <exception cref="T:Amazon.AppConfigData.Model.BadRequestException">
+            The input fails to satisfy the constraints specified by the service.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.InternalServerException">
+            There was an internal failure in the service.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.ResourceNotFoundException">
+            The requested resource could not be found.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appconfigdata-2021-11-11/StartConfigurationSession">REST API Reference for StartConfigurationSession Operation</seealso>
+        </member>
+        <member name="T:Amazon.AppConfigData.IAmazonAppConfigData">
+             <summary>
+             Interface for accessing AppConfigData
+            
+             Use the AppConfigData API, a capability of AWS AppConfig, to retrieve deployed configuration.
+             </summary>
+        </member>
+        <member name="M:Amazon.AppConfigData.IAmazonAppConfigData.GetLatestConfigurationAsync(Amazon.AppConfigData.Model.GetLatestConfigurationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the latest deployed configuration. This API may return empty Configuration
+            data if the client already has the latest version. See StartConfigurationSession to
+            obtain an InitialConfigurationToken to call this API.
+            
+             <important> 
+            <para>
+            Each call to GetLatestConfiguration returns a new ConfigurationToken (NextPollConfigurationToken
+            in the response). This new token MUST be provided to the next call to GetLatestConfiguration
+            when polling for configuration updates.
+            </para>
+             
+            <para>
+            To avoid excess charges, we recommend that you include the <code>ClientConfigurationVersion</code>
+            value with every call to <code>GetConfiguration</code>. This value must be saved on
+            your client. Subsequent calls to <code>GetConfiguration</code> must pass this value
+            by using the <code>ClientConfigurationVersion</code> parameter. 
+            </para>
+             </important>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetLatestConfiguration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetLatestConfiguration service method, as returned by AppConfigData.</returns>
+            <exception cref="T:Amazon.AppConfigData.Model.BadRequestException">
+            The input fails to satisfy the constraints specified by the service.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.InternalServerException">
+            There was an internal failure in the service.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.ResourceNotFoundException">
+            The requested resource could not be found.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appconfigdata-2021-11-11/GetLatestConfiguration">REST API Reference for GetLatestConfiguration Operation</seealso>
+        </member>
+        <member name="M:Amazon.AppConfigData.IAmazonAppConfigData.StartConfigurationSessionAsync(Amazon.AppConfigData.Model.StartConfigurationSessionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Starts a configuration session used to retrieve a deployed configuration. See the
+            GetLatestConfiguration API for more details.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartConfigurationSession service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the StartConfigurationSession service method, as returned by AppConfigData.</returns>
+            <exception cref="T:Amazon.AppConfigData.Model.BadRequestException">
+            The input fails to satisfy the constraints specified by the service.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.InternalServerException">
+            There was an internal failure in the service.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.ResourceNotFoundException">
+            The requested resource could not be found.
+            </exception>
+            <exception cref="T:Amazon.AppConfigData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/appconfigdata-2021-11-11/StartConfigurationSession">REST API Reference for StartConfigurationSession Operation</seealso>
+        </member>
+    </members>
+</doc>
